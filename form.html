@@ -5,10 +5,37 @@
 </head>
 <body>
     <h2>Contact Us</h2>
-    <form>
-        Name: <input type="text" name="name"><br><br>
-        Email: <input type="email" name="email"><br><br>
-        <input type="submit" value="Submit">
+
+        <form action="#" method="post">
+            <!-- Name field -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <!-- Email field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <!-- Dropdown -->
+            <label for="topic">Topic:</label>
+            <select id="topic" name="topic">
+                <option value="general">General Inquiry</option>
+                <option value="support">Support</option>
+                <option value="feedback">Feedback</option>
+            </select><br><br>
+
+            <!-- Radio buttons -->
+            <p>Are you a registered user?</p>
+            <input type="radio" id="yes" name="registered" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="registered" value="no">
+            <label for="no">No</label><br><br>
+
+            <!-- Message box -->
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
+
+            <!-- Submit button -->
+            <input type="submit" value="Submit">
     </form>
 </body>
 </html>
